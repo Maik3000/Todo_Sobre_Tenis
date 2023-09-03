@@ -5,12 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Links CSS-->
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/preset/normalize.css"> <!--Colocamos primero el normalize-->
+    <link rel="stylesheet" href="/css/preset/globalStyles.css">
 
-    <title>Game, Set, Blog: Todo sobre el Tenis</title>
+    <link rel="stylesheet" href="/css/components/header.css">
+    <link rel="stylesheet" href="/css/components/footer.css">
+
+    <link rel="stylesheet" href="/css/pages/index.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    
+
+    <title>Game, Set, Blog: Todo sobre Tenis</title>
 </head>
 <body>
+    <header class="header">
+        <div class="background">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="no-margin">Game, Set, Blog: 
+                        <br>
+                        <span class="no-margin">Todo sobre Tenis</span></h1>
+                </a>
+                
+                <nav class="navbar">
+                    <a href="Nosotros.html" class="navbar__item">Sobre Mi</a>
+                    <a href="Cursos.html" class="navbar__item">Cursos</a>
+                    <a href="Contacto.html" class="navbar__item">Contacto</a>
+                </nav>
+            </div>
+        </div>
+            <div class="header__texto">
+                    <h2 class="no-margin">Blog de Tenis con consejos y cursos</h2>
+                    <p class="no-margin">Aprender de los expertos para ser un jugador de élite</p>
+            </div>          
+        
+        </div>
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
+
+            <article class="article article-1">
+                <img src="/images/article-1.jpg" alt="">
+                <div class="article-content">
+                    <h4 class="no-margin">Cómo Desarrollar Tu Juego Mental en el Tenis</h4>
+                    <p>El tenis es tanto un juego mental como físico, y tu estado mental puede marcar la diferencia en la cancha. Este artículo explora estrategias efectivas para desarrollar un juego mental sólido en el tenis. Aprenderás cómo mantener la concentración, controlar los nervios y tomar decisiones inteligentes en momentos críticos, lo que te ayudará a superar a tus oponentes con una mentalidad ganadora.</p>
+                </div>
+                <a href="/Nosotros.html" class="boton-blog">Leer Entrada</a>
+            </article>
+            
+            <article class="article article-2">
+                <img src="/images/article-2.jpg" alt="">
+                <div class="article-content">
+                    <h4 class="no-margin">La Importancia del Calentamiento en el Tenis</h4>
+                    <p>Antes de entrar en la cancha, es crucial entender la importancia del calentamiento y estiramiento en el tenis. Un calentamiento adecuado eleva tu frecuencia cardíaca, aumenta la circulación sanguínea y prepara tus músculos para el juego. Además, los estiramientos adecuados pueden ayudarte a prevenir lesiones y mejorar la flexibilidad. Descubre en este artículo las mejores rutinas de calentamiento y estiramiento que te permitirán rendir al máximo en cada partido.</p>
+                </div>
+                <a href="/Nosotros.html" class="boton-blog">Leer Entrada</a>
+            </article>
+            
+            <article class="article article-3">
+                <img src="/images/article-3.jpg" alt="">
+                <div class="article-content">
+                    <h4 class="no-margin">Consejos para Ser un Mejor Jugador de Dobles en Tenis</h4>
+                    <p>El juego de dobles en el tenis presenta desafíos únicos que requieren una comprensión especializada y una coordinación con tu compañero de equipo. Este artículo te proporciona consejos valiosos sobre la comunicación en la cancha, la estrategia de red y cómo trabajar en conjunto para lograr una victoria en partidos de dobles. Descubre cómo mejorar tus habilidades de dobles y convertirte en un jugador más completo en la cancha de tenis.</p>
+                </div>
+                <a href="/Nosotros.html" class="boton-blog">Leer Entrada</a>
+            </article>
+            
+            
+        </main>
+        <aside class="sidebar">
+            <h3>Nuestros cursos y talleres</h3>
+
+            <section class="section">
+                <div class="section__content">
+                    <div class="section__text">
+                        <h4 class="no-margin">Curso de Iniciación al Tenis</h4>
+                        <p><span class="span__negrita">Precio:</span> $50</p>
+                        <p><span class="span__negrita">Cupo:</span> 20</p>
+                    </div>
+                    <a href="/Cursos.html" class="boton-mas-informacion">Más Información</a>
+                </div>
+            </section>
+            
+            <section class="section">
+                <div class="section__content">
+                    <div class="section__text">
+                        <h4 class="no-margin">Curso Avanzado de Técnica</h4>
+                        <p><span class="span__negrita">Precio:</span> $100</p>
+                        <p><span class="span__negrita">Cupo:</span> 20</p>
+                    </div>
+                    <a href="/Cursos.html" class="boton-mas-informacion">Más Información</a>
+                </div>    
+            </section>
+            
+            
+            <section class="section">
+                <div class="section__content">
+                    <div class="section__text">
+                        <h4 class="no-margin">Curso de Estrategia y Táctica en el Tenis</h4>
+                        <p><span class="span__negrita">Precio:</span> $170</p>
+                        <p><span class="span__negrita">Cupo:</span> 20</p>
+                    </div>    
+                    <a href="/Cursos.html" class="boton-mas-informacion">Más Información</a>
+                </div>    
+            </section>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__content">
+
+            <a href="index.html" class="logo">
+                <h1 class="no-margin">Game, Set, Blog: 
+                    <br>
+                    <span class="no-margin">Todo sobre Tenis</span></h1>
+            </a>
+
+            <div class="navbar">
+                <a href="Nosotros.html" class="navbar__item">Nosotros</a>
+                <a href="Cursos.html" class="navbar__item">Cursos</a>
+                <a href="Contacto.html" class="navbar__item">Contacto</a>
+            </div>
+
+        </div>
+    </footer>
     
 </body>
 </html>
