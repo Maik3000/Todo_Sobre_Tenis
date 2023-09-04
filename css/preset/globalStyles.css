@@ -69,4 +69,7 @@ img{
 .centrar-texto{
     text-align: center;
 }
+.no-margin-top{
+    margin-top: 0;
+}
 

@@ -1,0 +1,42 @@
+.contenido-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 0;
+
+}
+.contenido-main img{
+    width: 50%;
+
+}
+.contenido-main-text{
+    width: 50%;
+}
+.contenido-main-text p{
+    line-height: 2.3;
+}
+.contenido-main-text .mensaje-bienvenida,.contenido-main-text .vamos-jugar{
+    font-weight: bold;
+}
+
+@media (max-width:768px){
+    .contenido-main{
+        display: block;
+    }
+    .contenido-main-text,.contenido-main img{
+        width: 100%;
+    }
+    .contenido-main-text p{
+        line-height: 1.8;
+    }
+    
+    
+}
+@media (max-width:400px){
+.contenido-main-text p{
+    line-height: 1.2;
+}
+
+}
