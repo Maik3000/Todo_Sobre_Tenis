@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="/css/components/footer.css">
 
     <link rel="stylesheet" href="/css/pages/index.css">
-    
+    <link rel="stylesheet" href="/css/pages/contacto.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
     <title>Contacto</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header header-contacto">
         <div class="background">
         <div class="contenedor">
             <div class="barra">
@@ -46,11 +47,44 @@
         </div>
     </header>
 
-    <div class="contenedor ">
-        <p>Contacto</p>
+    <div class="contenedor contacto-scroll">
+        <h3 class="centrar-texto">Contacto</h3>
+        <div class="contacto-bg">
+
+        </div>
+
+
+        <form class="formulario" action="https://formspree.io/f/meqbkley" method="POST"> <!--Para que me llegue al correo por medio de formspree-->
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input class="campo__field" type="text" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            
+            <div class="campo">
+                <label class="campo__label" for="mail">E-mail</label>
+                <input class="campo__field" type="email" id="mail" placeholder="Ingresa tu E-mail">
+            </div>
+
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea" name="Mensaje" id="mensaje" ></textarea>
+            </div>
+
+            <div class="campo">
+                <button  class="boton-formulario " type="submit">
+                    <span>Enviar</span>
+                    <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                        <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                    </svg>
+                </button>
+            </div>
+            
+
+        </form>
     </div>
 
-    <footer class="footer">
+    <footer class="footer footer-contacto">
         <div class="footer__content">
 
             <a href="index.html" class="logo">

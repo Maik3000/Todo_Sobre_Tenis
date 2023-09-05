@@ -6,6 +6,12 @@
     grid-template-columns: 1fr 2fr;
     gap: 4rem;
 }
+.content-cursos:last-of-type{
+    border-bottom: none;
+
+}
+
+
 @media (max-width:400px){
     .content-cursos{
         display: block;
@@ -33,6 +39,12 @@
         width: 85%;
     }
 
+}
+@media (min-width:769px){
+    .header-cursos,.footer-cursos,.curso-scroll-1,.curso-scroll-2,.curso-scroll-3{
+        scroll-snap-align: center; /*Para que frene el scroll en cada article*/
+        scroll-snap-stop: always;
+    }
 }
 
 .section-boton{

@@ -7,6 +7,7 @@
     padding: 3rem 0;
 
 }
+
 .contenido-main img{
     width: 50%;
 
@@ -39,4 +40,10 @@
     line-height: 1.2;
 }
 
+}
+@media (min-width:769px){
+    .header-nosotros,.footer-nosotros,.nosotros-scroll{
+        scroll-snap-align: center; /*Para que frene el scroll en cada article*/
+        scroll-snap-stop: always;
+    }
 }

@@ -1,0 +1,93 @@
+.contacto-bg{
+    background-image: url(../../images/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario{
+    background-color: var(--blanco);
+    margin: -6rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+    
+}
+@media (max-width:400px){
+    .formulario{
+        padding-left: 0;
+    }
+    .campo__field--textarea{
+        height: 8rem;
+        width: 100%;
+    }
+    .contacto-bg{
+        background-position: center center;
+    }
+    
+}
+@media (min-width:769px){
+    .header-contacto,.footer-contacto,.contacto-scroll{
+        scroll-snap-align: center; /*Para que frene el scroll en cada article*/
+        scroll-snap-stop: always;
+    }
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    
+}
+
+.campo__label{
+    flex: 0 0 10rem; /*establecemos la medida base de los labels para que se vea alineado*/ 
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo__field{
+    flex: 1; /*Ajustamos que por cada 0 de label el field recibira 1rem por lo que abarcara el espacio restante*/
+    border: 1px solid rgb(184, 184, 184);
+    height: 4rem;
+}
+.campo__field--textarea{
+    height: 20rem;
+    
+
+}
+/*button from UI tools*/
+.boton-formulario {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica,"sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: var(--terciario);
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  .boton-formulario:hover {
+    background: var(--terciario);
+    color: var(--blanco);
+  }
+  
+  
+  .boton-formulario > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+  }
+  
+  .boton-formulario:hover svg {
+    transform: translateX(5px);
+    
+  }
+  
+  .boton-formulario:active {
+    transform: scale(0.95);
+  }
+  
+
