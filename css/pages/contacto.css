@@ -90,4 +90,13 @@
     transform: scale(0.95);
   }
   
-
+  .mensaje-error{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .mensaje-correcto{
+    color: rgb(1, 204, 12);
+    text-align: center;
+    text-transform: uppercase;
+  }
